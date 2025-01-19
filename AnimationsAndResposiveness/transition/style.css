@@ -1,0 +1,35 @@
+.container{
+    height:500px ;
+    width: 500px;
+    background-color: green;
+    border: 1px solid red;
+    display: flex;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    border: 1px solid orange;
+    background-color: aqua;
+    /* transition: 1s; */
+     
+    /* transition-property: background-color; */
+    /* transition-property: all; */
+    /* transition-delay: 0.2ms; */
+
+    /* transition: transform 1s ease 3s; */
+    transition: transform 3s ease;
+    /* transition: transform 3s ease-in;
+    transition: transform 3s ease-out; */
+    /* transition: transform 3s cubic-bezier(0.59,-0.08, 0.1, 1.26); */
+    
+}
+
+.box:hover{
+    background-color: brown;
+    transform: rotate(45deg);
+
+    transform: scale(2) translateX(500px) rotate(360deg);
+
+}

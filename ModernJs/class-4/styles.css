@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ffffff; /* Clean white background */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .logo-container {
+    text-align: center;
+  }
+  
+  /* Logo Design */
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #333; /* Default color for letters */
+    position: relative;
+  }
+  
+  /* Custom "C" Design */
+  .custom-c {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  /* Orange Half of "C" */
+  .orange-half {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border: 5px solid #ed6c00; /* Orange border for half */
+    border-radius: 50%;
+    border-right: none;
+    box-sizing: border-box;
+  }
+  
+  /* Blue Cut Section of "C" */
+  .blue-cut {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    border: 5px solid #59c3e1; /* Blue border for cut section */
+    border-radius: 50%;
+    border-left: none;
+    box-sizing: border-box;
+  }
+  
+  /* Other Letters */
+  .letter {
+    margin-left: 5px;
+    color: #333; /* Neutral dark gray */
+  }
+  
+  /* Slogan */
+  .slogan {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555; /* Light gray for the slogan */
+    letter-spacing: 1px;
+    font-style: italic;
+  }
+  
+  /* Animation */
+  .logo span {
+    animation: fadeIn 1.2s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  .logo span:nth-child(1) { animation-delay: 0.1s; }
+  .logo span:nth-child(2) { animation-delay: 0.2s; }
+  .logo span:nth-child(3) { animation-delay: 0.3s; }
+  .logo span:nth-child(4) { animation-delay: 0.4s; }
+  .logo span:nth-child(5) { animation-delay: 0.5s; }
+  .logo span:nth-child(6) { animation-delay: 0.6s; }
+  .logo span:nth-child(7) { animation-delay: 0.7s; }
+  .logo span:nth-child(8) { animation-delay: 0.8s; }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
